@@ -1,0 +1,18 @@
+import random
+
+primeList = []
+for a in range(2, 101):
+    # print(a)
+    k = a
+    while k > 1:
+        k -= 1
+        # print(k)
+        if k == 1:
+            primeList.append(a)
+            continue
+        elif a % k == 0:
+            break
+        #else:
+        #    continue
+        # primeList.append(a)
+print(primeList)
